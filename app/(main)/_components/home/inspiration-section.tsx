@@ -47,7 +47,7 @@ async function InspirationSection() {
             project.
           </p>
           <Link href="/inspiration">
-            <Button className=" cursor-pointer rounded-none w-max">Explore More</Button>
+            <Button className=" cursor-pointer  w-max">Explore More</Button>
           </Link>
         </div>
         <div className="col-span-2">

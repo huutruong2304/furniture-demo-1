@@ -21,7 +21,7 @@ const HeroSlide = ({ title, subtitle, description, src, alt, buttonText, buttonL
         <h1 className="text-5xl font-bold mb-4 text-primary whitespace-pre-line">{title}</h1>
         <p className="line-clamp-2 mb-4">{description}</p>
         <a href={buttonLink}>
-          <Button className="rounded-none">{buttonText}</Button>
+          <Button>{buttonText}</Button>
         </a>
       </div>
     </div>
