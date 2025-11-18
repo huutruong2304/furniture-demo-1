@@ -20,7 +20,7 @@ const ProductCard = ({ name, href, imageUrl, alt, price, oldPrice, category, isN
     <div className="flex-none w-full bg-neutral-100">
       <div className="relative min-h-80 group">
         <Image src={imageUrl} alt={alt} fill className="object-cover" />
-        <div className="w-full h-full bg-black/60 opacity-0 group-hover:opacity-100  absolute top-0 left-0 transition-opacity duration-300 ease-in-out flex flex-col justify-center items-center">
+        <div className="z-10 w-full h-full bg-black/60 opacity-0 group-hover:opacity-100  absolute top-0 left-0 transition-opacity duration-300 ease-in-out flex flex-col justify-center items-center">
           <Button className=" min-w-1/2 cursor-pointer">Add to cart</Button>
           <div className="w-full flex items-center">
             <Button variant={'link'} className="text-white cursor-pointer">

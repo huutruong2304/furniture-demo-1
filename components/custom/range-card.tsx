@@ -13,7 +13,7 @@ const RangeCard = ({ href, name, imageUrl, alt }: Props) => {
   return (
     <Link href={href} className="flex-none w-full">
       <div className="min-h-130 relative">
-        <Image src={imageUrl} alt={alt} fill className="rounded-lg object-cover" />
+        <Image src={imageUrl} alt={alt} fill className="object-cover" />
       </div>
       <h3 className="mt-2 md:mt-4 text-lg font-bold text-center">{name}</h3>
     </Link>
