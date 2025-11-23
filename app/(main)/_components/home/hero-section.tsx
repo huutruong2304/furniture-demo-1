@@ -1,5 +1,4 @@
 import React from 'react';
-import { HeroData } from '@/types';
 import Carousel from '@/components/custom/carousel/carousel';
 
 async function HeroSection() {

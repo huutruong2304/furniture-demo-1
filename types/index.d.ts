@@ -1,4 +1,4 @@
-export interface HeroData {
+interface HeroData {
   title: string;
   subtitle?: string;
   description: string;
@@ -8,10 +8,23 @@ export interface HeroData {
   buttonLink: string;
 }
 
-export interface InspirationData {
+interface InspirationData {
   title: string;
   description: string;
   src: string;
   alt: string;
   buttonLink?: string;
+}
+
+interface PromotionBannerData {
+  title: string;
+  description: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  icon: React.ComponentType<any>;
+}
+
+interface FilterItem {
+  value: string;
+  title: string;
+  count?: number;
 }
