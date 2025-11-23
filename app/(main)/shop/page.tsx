@@ -18,10 +18,38 @@ import Link from 'next/link';
 import React from 'react';
 import PromotionBannerSection from '../_components/shop/promotion-banner-section';
 import FilterSection from '../_components/shop/filter-section';
+import { Metadata } from 'next';
 
-type Props = {};
+export const metadata: Metadata = {
+  title: 'All Products - Furniture E-Commerce',
+  description: 'Explore our wide range of furniture products.',
+  // Open Graph Configuration (Facebook, Zalo, LinkedIn...)
+  openGraph: {
+    title: 'All Products - Furniture E-Commerce',
+    description: 'Explore our wide range of furniture products.',
+    url: '/shop',
+    siteName: 'Furniture E-Commerce',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Furniture Collection Preview',
+      },
+    ],
+    type: 'website',
+  },
 
-function ShopPage({}: Props) {
+  // Twitter Configuration (X)
+  twitter: {
+    card: 'summary_large_image',
+    title: 'All Products - Furniture E-Commerce',
+    description: 'Explore our wide range of furniture products.',
+    images: ['/images/og-image.jpg'],
+  },
+};
+
+function ShopPage() {
   const products: {
     id: string;
     name: string;
