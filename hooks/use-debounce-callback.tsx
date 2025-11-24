@@ -1,14 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 
-type CallbackFunction<T extends (...args: any[]) => any> = T;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type GenericFunction = (...args: any[]) => any;
 
-export function useDebounceCallback<T extends (...args: any[]) => any>(
-  callback: CallbackFunction<T>,
-  delay: number
-) {
-  const timerRef = useRef<any>(null);
-  const callbackRef = useRef<any>(null);
+export function useDebounceCallback<T extends GenericFunction>(callback: T, delay: number) {
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const callbackRef = useRef<T>(null);
 
   useEffect(() => {
     callbackRef.current = callback;
@@ -21,7 +18,9 @@ export function useDebounceCallback<T extends (...args: any[]) => any>(
       }
 
       timerRef.current = setTimeout(() => {
-        callbackRef.current(...args);
+        if (callbackRef.current) {
+          callbackRef.current(...args);
+        }
       }, delay);
     },
     [delay]
