@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
-import { TikTok_Sans } from 'next/font/google';
+import { Lato } from 'next/font/google';
 import './globals.css';
 
-const primarySans = TikTok_Sans({
-  variable: '--font-primary-sans',
+const primarySans = Lato({
+  weight: ['400', '700'],
   subsets: ['latin'],
+  variable: '--font-primary-sans',
 });
 
 export const metadata: Metadata = {

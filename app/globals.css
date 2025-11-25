@@ -154,6 +154,30 @@
   .footer-title {
     @apply font-semibold text-muted-foreground h-14;
   }
+
+  .pagination-item {
+    @apply h-10 aspect-square  bg-primary/20 text-gray-500! flex justify-center items-center cursor-pointer text-sm;
+  }
+
+  .pagination-item:hover {
+    @apply bg-primary text-white!;
+  }
+
+  .pagination-item-active {
+    @apply h-10 aspect-square bg-primary text-white! flex justify-center items-center cursor-pointer text-sm font-semibold;
+  }
+
+  .pagination-item-active:hover {
+    @apply bg-primary/90 text-white!;
+  }
+
+  .pagination-action {
+    @apply h-10 w-20 bg-primary text-white! flex justify-center items-center cursor-pointer text-sm font-semibold;
+  }
+
+  .pagination-action:hover {
+    @apply bg-primary/90 text-white!;
+  }
 }
 
 .my-masonry-grid {

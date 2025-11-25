@@ -6,19 +6,13 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-  PaginationLink,
-} from '@/components/ui/pagination';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import PromotionBannerSection from '../_components/shop/promotion-banner-section';
 import FilterSection from '../_components/shop/filter-section';
 import { Metadata } from 'next';
+import PaginationSection from '../_components/shop/pagination-section';
 
 export const metadata: Metadata = {
   title: 'All Products - Furniture E-Commerce',
@@ -232,24 +226,7 @@ function ShopPage() {
 
         {/* Pagination would go here */}
         <div className="py-10">
-          <Pagination>
-            <PaginationContent className="space-x-4">
-              <PaginationItem className="h-10 aspect-square bg-primary text-white flex justify-center items-center ">
-                <Link href="#">1</Link>
-              </PaginationItem>
-              <PaginationItem className="h-10 aspect-square bg-primary/20 flex justify-center items-center ">
-                <Link href="#">2</Link>
-              </PaginationItem>
-              <PaginationItem className="h-10 aspect-square bg-primary/20 flex justify-center items-center ">
-                <Link href="#">3</Link>
-              </PaginationItem>
-              <PaginationItem className="h-10 px-4 bg-primary/20 flex justify-center items-center ">
-                <PaginationLink href="#" aria-label="Next">
-                  Next
-                </PaginationLink>
-              </PaginationItem>
-            </PaginationContent>
-          </Pagination>
+          <PaginationSection totalPage={20} />
         </div>
       </div>
       {/* promotion and banner section  */}
