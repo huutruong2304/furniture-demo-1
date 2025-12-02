@@ -39,3 +39,16 @@ interface Review {
   content: string;
   helpfulCount: number;
 }
+
+interface ProductCard {
+  id: string;
+  href: string;
+  name: string;
+  imageUrl: string;
+  alt: string;
+  price: number;
+  oldPrice?: number;
+  category?: string;
+  isNew?: boolean;
+  stock?: number;
+}

@@ -1,4 +1,5 @@
 import ProductCard from '@/components/custom/product/product-card';
+import SectionTitle from '@/components/custom/section-title';
 import { Button } from '@/components/ui/button';
 import React from 'react';
 
@@ -96,8 +97,8 @@ function FeaturedProductsSection({}: Props) {
   ];
   return (
     <div className="app-container py-10">
-      <h3 className="text-4xl font-bold mb-6 text-center">Our Products</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+      <SectionTitle>Our Products</SectionTitle>
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 mt-5">
         {products.map((product) => (
           <ProductCard
             key={product.id}

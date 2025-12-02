@@ -4,16 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-type Props = {
-  name: string;
-  href: string;
-  imageUrl: string;
-  alt: string;
-  price: number;
-  oldPrice?: number;
-  category: string;
-  isNew?: boolean;
-};
+type Props = Omit<ProductCard, 'id'>;
 
 const ProductCard = ({ name, href, imageUrl, alt, price, oldPrice, category, isNew }: Props) => {
   return (

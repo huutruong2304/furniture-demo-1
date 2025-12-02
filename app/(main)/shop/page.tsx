@@ -13,6 +13,7 @@ import PromotionBannerSection from '../_components/shop/promotion-banner-section
 import FilterSection from '../_components/shop/filter-section';
 import { Metadata } from 'next';
 import PaginationSection from '../_components/shop/pagination-section';
+import { MOCK_PRODUCTS } from '@/mock-data/product';
 
 export const metadata: Metadata = {
   title: 'All Products - Furniture E-Commerce',
@@ -44,133 +45,7 @@ export const metadata: Metadata = {
 };
 
 function ShopPage() {
-  const products: {
-    id: string;
-    name: string;
-    href: string;
-    imageUrl: string;
-    alt: string;
-    price: number;
-    oldPrice?: number;
-    category: string;
-  }[] = [
-    {
-      id: '1',
-      name: 'Modern Sofa',
-      href: '/products/modern-sofa',
-      imageUrl: '/images/products/product-1.jpg',
-      alt: 'Modern Sofa',
-      price: 399.99,
-      oldPrice: 499.99,
-      category: 'Living Room',
-    },
-    {
-      id: '2',
-      name: 'Elegant Dining Table',
-      href: '/products/elegant-dining-table',
-      imageUrl: '/images/products/product-2.jpg',
-      alt: 'Elegant Dining Table',
-      price: 599.99,
-      category: 'Dining Room',
-    },
-    {
-      id: '3',
-      name: 'Comfortable Bed',
-      href: '/products/comfortable-bed',
-      imageUrl: '/images/products/product-3.jpg',
-      alt: 'Comfortable Bed',
-      price: 799.99,
-      oldPrice: 899.99,
-      category: 'Bedroom',
-    },
-    {
-      id: '4',
-      name: 'Stylish Office Chair',
-      href: '/products/stylish-office-chair',
-      imageUrl: '/images/products/product-4.jpg',
-      alt: 'Stylish Office Chair',
-      price: 699.99,
-      category: 'Office',
-    },
-    {
-      id: '5',
-      name: 'Cozy Armchair',
-      href: '/products/cozy-armchair',
-      imageUrl: '/images/products/product-5.jpg',
-      alt: 'Cozy Armchair',
-      price: 299.99,
-      oldPrice: 349.99,
-      category: 'Living Room',
-    },
-    {
-      id: '6',
-      name: 'Elegant Dining Table',
-      href: '/products/elegant-dining-table',
-      imageUrl: '/images/products/product-6.jpg',
-      alt: 'Elegant Dining Table',
-      price: 599.99,
-      oldPrice: 699.99,
-      category: 'Dining Room',
-    },
-    {
-      id: '7',
-      name: 'Comfortable Bed',
-      href: '/products/comfortable-bed',
-      imageUrl: '/images/products/product-7.jpg',
-      alt: 'Comfortable Bed',
-      price: 799.99,
-      oldPrice: 899.99,
-      category: 'Bedroom',
-    },
-    {
-      id: '8',
-      name: 'Stylish Office Chair',
-      href: '/products/stylish-office-chair',
-      imageUrl: '/images/products/product-8.jpg',
-      alt: 'Stylish Office Chair',
-      price: 699.99,
-      oldPrice: 799.99,
-      category: 'Office',
-    },
-    {
-      id: '9',
-      name: 'Modern Sofa',
-      href: '/products/modern-sofa-2',
-      imageUrl: '/images/products/product-1.jpg',
-      alt: 'Modern Sofa',
-      price: 399.99,
-      oldPrice: 499.99,
-      category: 'Living Room',
-    },
-    {
-      id: '10',
-      name: 'Elegant Dining Table',
-      href: '/products/elegant-dining-table-2',
-      imageUrl: '/images/products/product-2.jpg',
-      alt: 'Elegant Dining Table',
-      price: 599.99,
-      category: 'Dining Room',
-    },
-    {
-      id: '11',
-      name: 'Comfortable Bed',
-      href: '/products/comfortable-bed-2',
-      imageUrl: '/images/products/product-3.jpg',
-      alt: 'Comfortable Bed',
-      price: 799.99,
-      oldPrice: 899.99,
-      category: 'Bedroom',
-    },
-    {
-      id: '12',
-      name: 'Stylish Office Chair',
-      href: '/products/stylish-office-chair-2',
-      imageUrl: '/images/products/product-4.jpg',
-      alt: 'Stylish Office Chair',
-      price: 699.99,
-      category: 'Office',
-    },
-  ];
+  const products = MOCK_PRODUCTS;
   return (
     <div>
       <div className="relative h-80">

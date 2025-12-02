@@ -7,6 +7,7 @@ import AdditionalInfoSection from '../../_components/products/additional-info-se
 import ReviewSection from '../../_components/products/review-section';
 import { Separator } from '@/components/ui/separator';
 import TabSection from '../../_components/products/tab-section';
+import RelatedSection from '../../_components/products/related-section';
 
 type Props = {};
 
@@ -140,6 +141,7 @@ function ProductPage({}: Props) {
         additionalInfo={<AdditionalInfoSection specifications={detail.specifications || []} />}
         reviews={<ReviewSection reviews={defaultReviews} averageRating={4} totalReviews={100} />}
       />
+      <RelatedSection />
     </div>
   );
 }

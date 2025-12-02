@@ -1,4 +1,5 @@
 import RangeCard from '@/components/custom/range-card';
+import SectionTitle from '@/components/custom/section-title';
 import React from 'react';
 
 function BrowseRangeSection() {
@@ -25,7 +26,7 @@ function BrowseRangeSection() {
   return (
     <div className="app-container py-10">
       <div className="mb-10 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold">Browse By Range</h2>
+        <SectionTitle>Browse By Range</SectionTitle>
         <p className="mt-2 text-gray-600">
           Explore our diverse furniture ranges to find the perfect fit for your home.
         </p>
