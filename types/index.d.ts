@@ -28,3 +28,14 @@ interface FilterItem {
   title: string;
   count?: number;
 }
+
+// product
+interface Review {
+  id: string;
+  author: string;
+  avatar?: string;
+  rating: number; // 1 to 5
+  date: string;
+  content: string;
+  helpfulCount: number;
+}
