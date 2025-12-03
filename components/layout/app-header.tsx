@@ -47,9 +47,9 @@ const AppHeader = () => {
           <button aria-label="Like product">
             <HeartIcon className="header-icon" />
           </button>
-          <button aria-label="Shopping cart">
+          <Link href="/cart" aria-label="Shopping cart">
             <ShoppingCartIcon className="header-icon" />
-          </button>
+          </Link>
         </div>
       </div>
     </header>
