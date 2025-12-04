@@ -27,7 +27,7 @@ const SummarySection = ({ subtotal, tax, total, onCheckout }: Props) => {
         <span>Total:</span>
         <span>${total}</span>
       </div>
-      <Link href="/checkout">
+      <Link href="/cart/checkout">
         <Button className="w-full mt-4 cursor-pointer font-bold" size="lg" onClick={onCheckout}>
           Proceed to Checkout
         </Button>

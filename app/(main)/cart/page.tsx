@@ -3,7 +3,7 @@ import ProductInCart from '@/components/custom/product/product-in-cart';
 import BannerLayout from '@/components/layout/banner-layout';
 import { Table, TableBody, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import React from 'react';
-import SummarySection from '../../_components/cart/summary-section';
+import SummarySection from '../_components/cart/summary-section';
 import { useFieldArray, useForm } from 'react-hook-form';
 
 type CartFormValues = {
