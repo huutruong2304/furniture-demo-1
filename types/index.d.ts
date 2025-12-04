@@ -52,3 +52,15 @@ interface ProductCard {
   isNew?: boolean;
   stock?: number;
 }
+
+// cart
+interface CartItem {
+  id: string;
+  name: string;
+  alt: string;
+  src: string;
+  price: number;
+  oldPrice?: number;
+  quantity: number;
+  subtotal: number;
+}
