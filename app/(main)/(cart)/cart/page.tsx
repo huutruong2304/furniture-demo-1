@@ -3,7 +3,7 @@ import ProductInCart from '@/components/custom/product/product-in-cart';
 import BannerLayout from '@/components/layout/banner-layout';
 import { Table, TableBody, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import React from 'react';
-import SummarySection from '../_components/cart/summary-section';
+import SummarySection from '../../_components/cart/summary-section';
 import { useFieldArray, useForm } from 'react-hook-form';
 
 type CartFormValues = {
@@ -64,7 +64,7 @@ function CartPage() {
         <div className="grid grid-cols-10 gap-4">
           <div className="col-span-7">
             <Table>
-              <TableHeader className="bg-primary/20">
+              <TableHeader className="bg-primary/10">
                 <TableRow>
                   <TableHead className="py-5 font-bold w-1/2">Product</TableHead>
                   <TableHead className="font-bold">Price</TableHead>

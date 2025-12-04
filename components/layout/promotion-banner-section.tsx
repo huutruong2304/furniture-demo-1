@@ -26,7 +26,7 @@ function PromotionBannerSection() {
     },
   ];
   return (
-    <div className="py-15 bg-primary/20 ">
+    <div className="py-15 bg-primary/10 ">
       <div className="grid grid-cols-4">
         {promotionItems.map((item, index) => (
           <PromotionBannerItem
