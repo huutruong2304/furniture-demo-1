@@ -13,12 +13,12 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 
-type Props = {};
-
-function CheckoutPage({}: Props) {
+function CheckoutPage() {
   const router = useRouter();
-  const handleOrder = () => {
-    router.push('/cart/completed-order');
+  const handleOrder = (e: React.MouseEvent<HTMLButtonElement>) => {
+    // prevent form submit
+    e.preventDefault();
+    router.push('/cart/order-completed');
   };
   return (
     <BannerLayout

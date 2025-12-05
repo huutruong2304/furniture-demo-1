@@ -64,3 +64,30 @@ interface CartItem {
   quantity: number;
   subtotal: number;
 }
+
+interface OrderBilling {
+  id: string;
+  date: string;
+  total: string;
+  paymentMethod: string;
+  products: OrderProduct[];
+  shippingInfo: OrderShipping;
+}
+
+interface OrderProduct {
+  id: string;
+  name: string;
+  href: string;
+  price: number;
+  oldPrice?: number;
+  quantity: number;
+  subtotal: number;
+}
+
+interface OrderShipping {
+  id: string;
+  name: string;
+  email: string;
+  address: string;
+  phone: string;
+}
