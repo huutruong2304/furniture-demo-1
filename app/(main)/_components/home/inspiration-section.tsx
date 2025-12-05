@@ -37,7 +37,7 @@ async function InspirationSection() {
     },
   ];
   return (
-    <div className="py-10 bg-primary/20">
+    <div className="py-10 bg-primary/10">
       <div className="app-container grid grid-cols-3">
         <div className="col-span-1 flex flex-col justify-center">
           <h2 className="text-4xl font-bold mb-4">100+ Beautiful Inspirations</h2>

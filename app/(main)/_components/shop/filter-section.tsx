@@ -186,7 +186,7 @@ const FilterSection = () => {
   };
 
   return (
-    <div className="bg-primary/20 py-2">
+    <div className="bg-primary/10 py-2">
       <div className="app-container flex justify-between">
         <div className="flex items-center">
           <Button

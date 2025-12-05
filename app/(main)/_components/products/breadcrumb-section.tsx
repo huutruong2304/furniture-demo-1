@@ -13,7 +13,7 @@ type Props = {
 
 const BreadCrumbSection = ({ productName }: Props) => {
   return (
-    <div className="bg-primary/20 py-5">
+    <div className="bg-primary/10 py-5">
       <Breadcrumb className="app-container ">
         <BreadcrumbList className="text-black">
           <BreadcrumbItem>

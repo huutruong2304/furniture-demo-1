@@ -156,7 +156,7 @@
   }
 
   .pagination-item {
-    @apply h-10 aspect-square  bg-primary/20 text-gray-500! flex justify-center items-center cursor-pointer text-sm;
+    @apply h-10 aspect-square  bg-primary/10 text-gray-500! flex justify-center items-center cursor-pointer text-sm;
   }
 
   .pagination-item:hover {
