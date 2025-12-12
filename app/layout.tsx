@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Lato } from 'next/font/google';
 import './globals.css';
+import { Toaster } from '@/components/ui/sonner';
 
 const primarySans = Lato({
   weight: ['400', '700'],
@@ -20,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${primarySans.variable} antialiased`}>{children}</body>
+      <body className={`${primarySans.variable} antialiased`}>
+        {children}
+
+        <Toaster position="top-right" visibleToasts={2} richColors />
+      </body>
     </html>
   );
 }
