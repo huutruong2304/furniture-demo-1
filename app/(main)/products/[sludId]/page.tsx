@@ -9,9 +9,7 @@ import { Separator } from '@/components/ui/separator';
 import TabSection from '../../_components/products/tab-section';
 import RelatedSection from '../../_components/products/related-section';
 
-type Props = {};
-
-function ProductPage({}: Props) {
+function ProductPage() {
   const detail: {
     id: string;
     name: string;

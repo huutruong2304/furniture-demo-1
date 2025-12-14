@@ -1,6 +1,6 @@
 import ProductCard from '@/components/custom/product/product-card';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import FilterSection from '../_components/shop/filter-section';
 import { Metadata } from 'next';
 import PaginationSection from '../_components/shop/pagination-section';
@@ -49,7 +49,9 @@ function ShopPage() {
         { label: 'All Products', isCurrentPage: true },
       ]}
     >
-      <FilterSection />
+      <Suspense>
+        <FilterSection />
+      </Suspense>
       <div className="app-container py-10">
         {/* Product grid would go here */}
         <div className="grid grid-cols-4 gap-6">
@@ -72,7 +74,9 @@ function ShopPage() {
 
         {/* Pagination would go here */}
         <div className="py-10">
-          <PaginationSection totalPage={20} />
+          <Suspense>
+            <PaginationSection totalPage={20} />
+          </Suspense>
         </div>
       </div>
     </BannerLayout>

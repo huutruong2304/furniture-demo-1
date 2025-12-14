@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Pagination } from 'swiper/modules';
-import { InspirationData } from '@/types';
 import InspirationCard from './inspiration-card';
 
 type Props = {

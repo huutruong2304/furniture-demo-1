@@ -77,7 +77,7 @@ interface OrderBilling {
 interface OrderProduct {
   id: string;
   name: string;
-  href: string;
+  href?: string;
   price: number;
   oldPrice?: number;
   quantity: number;

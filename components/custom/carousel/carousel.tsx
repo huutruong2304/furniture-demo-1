@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { HeroData } from '@/types';
 import HeroSlide from './hero-slide';
 
 type Props = {

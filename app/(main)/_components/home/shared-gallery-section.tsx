@@ -1,9 +1,7 @@
 import PhotoGallery from '@/components/custom/photo-gallery';
 import React from 'react';
 
-type Props = {};
-
-function ShareGallerySection({}: Props) {
+function ShareGallerySection() {
   const data: { src: string; alt: string }[] = [
     { src: '/images/gallery/photo-1.jpg', alt: 'Gallery Image 1' },
     { src: '/images/gallery/photo-2.jpg', alt: 'Gallery Image 2' },

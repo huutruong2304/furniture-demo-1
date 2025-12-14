@@ -3,9 +3,7 @@ import React from 'react';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 
-type Props = {};
-
-const AppFooter = (props: Props) => {
+const AppFooter = () => {
   const mainLinks: { label: string; href: string }[] = [
     { label: 'Home', href: '/' },
     { label: 'Shop', href: '/shop' },

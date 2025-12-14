@@ -3,9 +3,7 @@ import SectionTitle from '@/components/custom/section-title';
 import { Button } from '@/components/ui/button';
 import React from 'react';
 
-type Props = {};
-
-function FeaturedProductsSection({}: Props) {
+function FeaturedProductsSection() {
   const products: {
     id: string;
     name: string;

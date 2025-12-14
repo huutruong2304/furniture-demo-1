@@ -1,6 +1,5 @@
 import InspirationCarousel from '@/components/custom/carousel/inspiration-carousel';
 import { Button } from '@/components/ui/button';
-import { InspirationData } from '@/types';
 import Link from 'next/link';
 import React from 'react';
 
